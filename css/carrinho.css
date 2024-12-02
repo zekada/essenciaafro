@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Comfortaa', cursive;
+   box-sizing: border-box;
+}
+
+.container{
+   width: 100%;
+   margin: 0 ;
+   padding: 0 auto;    
+}
+/*MENU*/
+header{
+  background: #C8170E;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  margin-left: 10%;
+}
+.logo{
+  filter: invert(100%);
+}
+.logo:hover{ 
+  filter: none;
+}
+.logo img{
+  width: 130px;
+}
+
+
+.menu{
+  margin-right: 10%;
+}
+
+
+.menu li{
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.clear{
+  clear: both;
+}
+/*pesquisa*/
+.container-busca{
+  width: 500px;
+  position: relative;
+  height: 50px;
+}
+.container-busca input {
+  height: 40px;
+  border: 1px solid #ececec;
+  border-radius: 25px;
+  outline: none;
+  padding-left: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  cursor: pointer;
+  color: #000000;
+  background-color: #C8170E;
+}
+
+.container-busca button { 
+  height: 41px;
+  width: 50px;
+  background:  url('../img/lupa.png') center no-repeat;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+
+}
+
+.container-busca ::placeholder{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.user{
+  filter: invert(100%);
+}
+.user:hover{ 
+  filter: none;
+}
+.shop{
+  filter: invert(100%);
+}
+.shop:hover{ 
+  filter: none;
+}
+
+/*CATEGORIAS*/
+.menu-linha{
+  width: 100%;
+  height: 50px;
+  background-color: #ececec;
+  
+}
+.caixa-conteudo{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 5pt;
+  
+}
+.conteudo{
+  
+  padding: 16px 50px;
+  color: #888;
+}
+.conteudo:hover{
+  color: #C8170E;
+  border-bottom: 2px solid #C8170E;
+}
+.cont-vocesabia{
+  color: #C8170E;
+}
+.conteudo a{
+  text-decoration: none;
+}
+hr{
+  margin-top: 3px;
+  padding: 20px 0;
+}
+
+
+/*carrinho*/
+body {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+  }
+  
+ .carrinho h1{
+    text-align: center;
+  margin-top: 20px;
+  }
+  
+  #cart {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #cart td, #cart th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #cart th {
+    background-color: #f2f2f2;
+  }
+  
+  #total {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 1515px;
+    
+  }
+
+
+  .button:hover{
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .product-img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+
+
+/*Rodape*/
+footer{
+    padding: 50px 0;
+    background: #C8170E;
+}
+.container-footer{
+    max-width: 100%;
+    padding: 0;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex: wrap;
+}
+.footer-col{
+    padding: 2px 15px;
+    width: 35%;
+}
+.footer-col h4{
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #068039;
+    padding-left: 10px;
+}
+.footer-col .rede-social{
+    margin-top: 30px;
+}
+.footer-col .rede-social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: all 0.3s ease;
+    margin: 0 6px;
+}
+.footer-col .rede-social a:hover{
+    color: #C8170E;
+    background-color: #fff;
+}
+.footer-col .form-insc input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    color: #FFF;
+    border: 1px solid #fff;
+}
+.footer-col .form-insc button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+    color: #C8170E;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.direitos{
+    padding: 5px 0;
+   background: #C8170E;
+   text-align: center;
+   font-size: 13px;
+ }
+ .direitos a{
+     text-decoration: none;
+     color: #ECECEC;
+ }
+
+ .remove-button{
+   border: none;
+   background-color: rgb(185, 185, 185);
+   border-radius: 50px;
+ 
+ padding: 10px 5px;
+ }
+
+
+ .remove-button:hover{
+  cursor: pointer;
+  border: 1px solid black;
+ }

@@ -1,0 +1,186 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+    <script src="https://kit.fontawesome.com/401873f18c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+    
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png"></a>
+    
+            </div>
+    
+            <form action=" " method="post">
+                <div class="container-busca">
+                    <input type="search" id="busca" name="q" placeholder="Busque Aqui!">
+                    <button type="submit"></button>
+                </div>
+    
+            </form>
+    
+            <div class="menu">
+    
+                <ul class="bnt">
+                    <li class="shop">
+                        <a href="carrinho.html"><img src="img/carrinho.png" width="40px"></a>
+                    </li>
+                    <li class="user">
+                        <a href="autentificacao.html"><img src="img/conta.png" width="40px"></a>
+                    </li>
+                </ul>
+            </div>
+    
+        </header>
+        
+        <div class="menu-linha">
+            <div class="caixa-conteudo">
+                <div class="conteudo">
+                    <h1>FEMININO </h1>
+                </div>
+                <hr width="2px" size="30px">
+                <div class="conteudo">
+                    <h1>MASCULINO</h1>
+                </div>
+                <hr width="2px" size="30px">
+                <div class="conteudo">
+                    <h1>INFANTIL</h1>
+                </div>
+                <hr width="2px" size="30px">
+                <div class="conteudo">
+                    <h1>ACESSÓRIOS</h1>
+                </div>
+                <hr width="2px" size="30px">
+                <div class="conteudo">
+                    <h1>NOVIDADES</h1>
+                </div>
+                <hr width="2px" size="30px">
+                <div class="conteudo">
+                    <a href="vocesabia.html"><h1 class="cont-vocesabia">VOCÊ SABIA?</h1></a>
+                </div>
+            </div>
+    </div>
+
+    <!--Carrinho-->
+
+
+      
+       
+        <div class="carrinho">
+
+            <h1>Seu Carrinho</h1>
+
+       
+       <table id="cart">
+         <tr>
+           <th>Produto</th>
+           <th>Imagem</th>
+           <th>Quantidade</th>
+           <th>Preço</th>
+           <th>Remover</th>
+         </tr>
+         <tr>
+           <td>camisa</td>
+           <td><img src="img/produto1camisa.webp" alt="Item 1" class="product-img"></td>
+           <td class="quant">2</td>
+           <td>R$ 19,99</td>
+           <td><button class="remove-button">Remover</button></td>
+         </tr>
+         <tr>
+           <td>camisa</td>
+           <td><img src="img/produto1camisa.webp" alt="Item 2" class="product-img"></td>
+          
+           <td class="quant">1</td>
+           <td>R$ 9,99</td>
+           <td><button class="remove-button">Remover</button></td>
+         </tr>
+         <tr>
+           <td>turbante</td>
+           <td><img src="img/durag.svg" alt="Item 3" class="product-img"></td>
+           <td class="quant">3</td>
+           <td>R$ 14,99</td>
+           <td><button class="remove-button">Remover</button></td>
+         </tr>
+         <tr>
+           <td id="total" colspan="4">Total:</td>
+           <td>R$ 69,95</td>
+         </tr>
+       </table>
+       
+       <button class="button">Finalizar Compra</button>
+        </div>
+    
+        <script>
+            // Script para remover item do carrinho
+            var removeButtons = document.getElementsByClassName("remove-button");
+            
+            for (var i = 0; i < removeButtons.length; i++) {
+              var button = removeButtons[i];
+              button.addEventListener("click", function() {
+                var row = this.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+              });
+            }
+          </script>
+
+
+
+
+
+
+        <!--Rodapé-->
+        <footer>
+            <div class="container-footer">
+                <div class="row-footer">
+                    <!--Col 1-->
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="quemsomos.html">Quem somos</a></li>
+                            <li><a href="#">Nossos serviços</a></li>
+                            <li><a href="#">Políticas de privacidade</a></li>
+                        </ul>
+                    </div>
+                    <!--Col 2-->
+                    <div class="footer-col">
+                        <h4>Obter Ajuda</h4>
+                        <ul>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Envio</a></li>
+                            <li><a href="#">Devoluções</a></li>
+                            <li><a href="#">Status do pedido</a></li>
+                            <li><a href="#">Opções de pagamento</a></li>
+                        </ul>
+                    </div>
+                    <!--Col 4-->
+                    <div class="footer-col">
+                        <h4>Inscreva-se</h4>
+                        <div class="form-insc">
+                            <form>
+                                <input type="email" placeholder="Digite o seu email" required>
+    
+                                <button>Inscrever</button>
+                            </form>
+                        </div>
+    
+                        <div class="rede-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </footer>   
+        <div class="direitos">
+            <a href="#">Essência Afro &#169 2023 Todos os direitos reservados.</a>
+        </div>
+</body>
+</html>
